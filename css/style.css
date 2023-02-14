@@ -1,13 +1,19 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+html{
+    background: #20212B;
+}
 body {
     color: #777777;
     font-weight: 500;
     background: #ffffff;
     font-family: 'Quicksand', sans-serif;
 }
-
+.first{
+    margin-top: 5%;
+    background: #20212b;
+}
 h1,
 h2, 
 h3, 
@@ -152,14 +158,17 @@ a:focus {
 /**********************************/
 .navbar {
     position: relative;
-    transition: .5s;
     z-index: 999;
+    transition: .5s;
+    top: 0;
+   margin-top: -2%;
+    
     
 }
 
 .navbar.nav-sticky {
     position: fixed;
-    top: 0;
+ top: 0;
     width: 100%;
     box-shadow: 0 2px 5px rgba(187, 85, 2, 0.3);
     transition: .5s;
@@ -175,17 +184,18 @@ a:focus {
     text-transform: uppercase;
 }
 
-.navbar .navbar-brand img {
-    max-width: 100%;
-    max-height: 40px;
-}
+ .navbar .navbar-brand img {
+    max-width: 150%;
+    max-height: 80px;
+} 
 
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    padding: 10px 15px 8px 15px;
+    padding: 6px 10px 4px 10px;
     color: #ffffff;
+    margin-left: 0%;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -240,7 +250,7 @@ a:focus {
         padding: 5px;
     }
     .nav-link{
-        margin-left: 40%;
+        margin-left: 40% !important;
     }
     .navbar .dropdown-menu {
         box-shadow: none;
@@ -498,7 +508,7 @@ a:focus {
 
 .about .section-header {
     margin-bottom: 30px;
-    margin-left: 0;
+    margin-left: 0%;
 }
 
 .about .about-img {
